@@ -1,0 +1,127 @@
+ $main-color: #2B59FF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #12141D;
+    padding: 63px 203px 500px 203px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    button {
+        background-color: $main-color;
+        border-radius: 50px;
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding: 20px 40px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__links {
+            display: flex;
+            gap: 36px;
+
+            a {
+                color: #BAB7B7;
+                font-size: 18px;
+                text-decoration: none;
+                transition: .3s ease;
+ 
+                &::after {
+                    content: "";
+                    display: block;
+                    border: 1px solid $main-color;
+                    width: 30%;
+                    transition: .3s ease;
+                    opacity: 0;
+                }
+
+                &:hover:after {
+                    opacity: 1;
+                    width: 100% !important;
+                }
+
+                &:hover {
+                    color: $main-color !important;
+                }
+            }
+
+            .active {
+                color: $main-color;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    border: 1px solid $main-color;
+                    width: 30%;
+                    transition: .3s ease;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .get-started {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+
+        h1 {
+            color: white;
+            font-size: 64px;
+            text-align: center;
+
+            u {
+                color: $main-color;
+            }
+        }
+
+        p {
+            color: #FAFAFA;
+            opacity: 70%;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    .dashboard {
+        position: absolute;
+        left: 90px;
+        bottom: -100%;
+    }
+    image-rendering: auto;
+
+
+}
+.box{
+    display: flex;
+
+
+h1{
+    margin: 100px;
+}
+}
+
+
+
+
+
+
+
+
+
+
